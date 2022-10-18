@@ -1,0 +1,13 @@
+CREATE TABLE dep
+(deptno number(2,0),
+ dname varchar2(14) Not null,
+ loc varchar2(13),
+ constraint pk_dep1 primary key (deptno)
+);
+
+insert into DEP(DEPTNO, DNAME, LOC) values(12, 'purchase', 'london');
+insert into dep values(15, 'sale', 'rajkot');
+insert into dep values(30, 'head', 'surat');
+insert into dep values(40, 'account', 'India'); 
+
+commit;

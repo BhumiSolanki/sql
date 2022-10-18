@@ -1,0 +1,59 @@
+CREATE TABLE dept
+(empno numeric(4) Primary Key,
+ ename varchar(10) Not null,
+ job varchar(9),
+ mgr number(4),
+ hiredate date,
+ sal numeric(7,2),
+ comm numeric(7,2),
+ deptno numeric(2) Not null 
+); 
+
+insert into deptm values
+(121,'smith','clerk','2001',to_date('1-dec-21','dd-mm-yyyy'),'100','11',10);
+
+insert into deptm values
+(122,'allen','salesman','2002',to_date('2-dec-21','dd-mm-yyyy'),'101','12',20);
+
+insert into deptm values
+(123,'ward','salesman','2003',to_date('2-dec-21','dd-mm-yyyy'),'102','13',30);
+
+insert into deptm values
+(124,'jones','manager','2004',to_date('3-dec-21','dd-mm-yyyy'),'103','14',40);
+
+insert into deptm values
+(127,'sona','desiner','2007',to_date('6-jan-22','dd-mm-yyyy'),'106','17',70);
+
+insert into deptm values
+(128,'ridham','salesman','2008',to_date('7-feb-22','dd-mm-yyyy'),'107','18',80);
+
+insert into deptm values
+(129,'riya','clerk','2009',to_date('8-march-22','dd-mm-yyyy'),'108','19',10);
+
+insert into deptm values
+(130,'sita','trainer','2001',to_date('6-jan-21','dd-mm-yyyy'),'102','12',20);
+
+insert into deptm values
+(131,'mitu','salesman','2005',to_date('3-dec-21','dd-mm-yyyy'),'105','15',30);
+
+1. select * from deptm;
+2. desc deptm;
+3. select * from tab;
+4. select Empno from deptm;
+5. select Ename, job from deptm;
+6. select Empno,comm from deptm;
+7. select Empno,mgr from deptm;
+8. select Deptno from deptm;
+9. select Empno, Ename, job, mgr from deptm;
+10.select Ename, mgr from deptm;
+11.select job, comm from deptm;
+12.select Ename, Deptno from deptm;
+13.select Deptno, Ename, Sal , job from deptm;
+14.select Deptno, Ename from deptm;
+15.select loc from dep;
+16.select dname, loc from dept; 
+
+
+
+ 
+
